@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="intro">
     <MDBRow center class="d-flex">
       <MDBCol md="6">
         <div class="text-center py-5">
@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     goto() {
-      const el = document.getElementById("skills");
+      const el = document.getElementById("about");
       el.scrollIntoView({ behavior: "smooth" });
     },
   },

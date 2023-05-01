@@ -1,77 +1,68 @@
-import { BIcon, BIconArrowUp, BIconArrowDown } from 'bootstrap-vue'
-
 <template>
-  <footer class="footer">
-    <b-row class="justify-content-center">
-      <b-col class="d-flex justify-content-center">
-        <div class="py-5">
-          <div @click="scroll()">
-            <div class="h2 mb-0">
-                <b-icon-chevron-double-up></b-icon-chevron-double-up>
-            </div>
-          </div>
-        </div>
-      </b-col>
-    </b-row>
-    <b-row class="justify-content-center">
-      <b-col class="d-flex justify-content-center">
-        <!--- <div>
-          <a
-            :href="bottomLink.href"
-            target="_blank"
-            v-for="bottomLink in bottomLinks"
-            :key="bottomLink.title"
-            ><img
-              class="px-lg-5 px-2"
-              :src="require(`../assets/images/${bottomLink.srcImage}.jpg`)"
-              :title="bottomLink.title"
-          /></a>
-        </div> --->
-      </b-col>
-    </b-row>
-  </footer>
+  <MDBFooter bg="dark" :text="['center', 'white']">
+    <!-- Grid container -->
+    <MDBContainer class="p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <MDBBtn
+          tag="a"
+          outline="light"
+          href="https://www.facebook.com/julius.stammler/"
+          floating
+          class="m-1"
+        >
+          <MDBIcon iconStyle="fab" icon="facebook-f"></MDBIcon>
+        </MDBBtn>
+        <!-- Instagram -->
+        <MDBBtn
+          tag="a"
+          outline="light"
+          href="https://www.instagram.com/juliusstammler/"
+          floating
+          class="m-1"
+        >
+          <MDBIcon iconStyle="fab" icon="instagram"></MDBIcon>
+        </MDBBtn>
+        <!-- Linkedin -->
+        <MDBBtn
+          tag="a"
+          outline="light"
+          href="https://www.linkedin.com/in/julius-stammler-2596ba226/"
+          floating
+          class="m-1"
+        >
+          <MDBIcon iconStyle="fab" icon="linkedin-in"></MDBIcon>
+        </MDBBtn>
+      </section>
+      <!-- Section: Social media -->
+    </MDBContainer>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div
+      class="text-center p-3"
+      style="background-color: rgba(0, 0, 0, 0.2)"
+    >
+      © 2023 Copyright:
+      <a class="text-white" href="https://mxrcx.github.io/Nuxt-Portfolio/"
+        >Julius Stammler</a
+      >
+    </div>
+    <!-- Copyright -->
+  </MDBFooter>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      bottomLinks: [
-        {
-          title: 'Github',
-          srcImage: 'github',
-          href: 'https://github.com/username',
-        },
-        {
-          title: 'Resumé',
-          srcImage: 'cv',
-          href: 'resume link here',
-        },
-        {
-          title: 'LinkedIn',
-          srcImage: 'linkedin',
-          href: 'https://www.linkedin.com/in/username',
-        },
-      ],
-    }
-  },
-  methods: {
-    scroll() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      })
+  import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdb-vue-ui-kit';
+
+  export default {
+    components: {
+      MDBFooter,
+      MDBContainer,
+      MDBRow,
+      MDBCol,
+      MDBBtn,
+      MDBIcon
     },
-  },
-}
+  };
 </script>
-
-<style scoped>
-.footer {
-  background-color: black;
-}
-
-.footer-icons {
-  cursor: pointer;
-}
-</style>

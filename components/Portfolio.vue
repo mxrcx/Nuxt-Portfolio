@@ -1,92 +1,131 @@
 <template>
-  <section class="Portfolio px-5">
+  <section class="hero Portfolio px-5">
     <b-row class="justify-content-center">
       <b-col lg="6" md="8" sm="10" cols="12">
-        <p class="text-center title-text pb-3" id="portfolio">
+        <p class="text-center title-text text-white pb-3" id="portfolio">
           Portfolio
         </p>
       </b-col>
     </b-row>
-    <b-row v-for="box in boxes" :key="box.name" class="boxes pb-5 justify-content-center">
-      <b-col lg="5" md="6" cols="12">
-        <div class="font-size-biggish purple">
-          {{ box.title }}
-        </div>
-        <div class="regular-text">
-          <p>
-            {{ box.desc }}
-          </p>
-          <p>
-            Technologies used: <span> {{ box.tech }}</span>
-          </p>
-        </div>
-        <div class="d-flex align-items-center">
-          <div v-if="box.link">
-            <b-button variant="outline-dark" class="link-text mr-2 mr-lg-5 purple" :href="box.link" target="_blank">Live demo</b-button>
-          </div>
-          <div v-if="box.source">
-            <b-button variant="link" class="font-size-biggish link-text text-decoration-none" :href="box.source" target="_blank">
-              Source Code
-            </b-button>
-          </div>
-        </div>
-      </b-col>
-      <b-col lg="5" md="6" sm="12" cols="12" class="pt-3">
-        <div class="">
-          <a :href="box.link" target="_blank">
-            <b-img
-              fluid-grow
-              rounded
-              :src="`../assets/images/${box.name}.jpg`"
-              alt=""
-            />
-          </a>
-        </div>
+    <b-row class="d-flex justify-content-center">
+      <b-col lg="4" md="6" sm="8" cols="10" class="d-flex align-items-center">
+        <p class="font-weight-bold text-white regular-text">Learn more about my recent projects:</p>
       </b-col>
     </b-row>
+    <MDBRow :cols="['1', 'md-2']" class="g-4 py-3">
+      <MDBCol>
+        <MDBCard>
+          <MDBCardImg :src="story" top alt="..." />
+          <MDBCardBody>
+            <MDBCardTitle>Biathlon Olympics</MDBCardTitle>
+            <MDBCardText>
+              I covered the Biathlon Olympics in Oberhof, Thuringia in the year
+              2022/2023. This was my first big project working alongside a
+              professional TV production team.
+            </MDBCardText>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      <MDBCol>
+        <MDBCard>
+          <MDBCardImg :src="commercial" top alt="..." />
+          <MDBCardBody>
+            <MDBCardTitle>Berlin Thunders</MDBCardTitle>
+            <MDBCardText>
+              I filmed several American football games for the German football
+              team Berlin Thunders, setting up multiple cameras to capture all
+              the plays from different angles.
+            </MDBCardText>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      <MDBCol>
+        <MDBCard>
+          <MDBCardImg :src="product" top alt="..." />
+          <MDBCardBody>
+            <MDBCardTitle>FPV Drone</MDBCardTitle>
+            <MDBCardText>
+              I produced an unboxing video of the new DJI FPV Drone. This project taught me how to present and promote products.            </MDBCardText>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      <MDBCol>
+        <MDBCard>
+          <MDBCardImg :src="product" top alt="..." />
+          <MDBCardBody>
+            <MDBCardTitle>FPV Drone</MDBCardTitle>
+            <MDBCardText>
+              I produced an unboxing video of the new DJI FPV Drone. This project taught me how to present and promote products.
+            </MDBCardText>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+    </MDBRow>
+    <MDBRow center class="d-flex py-5">
+      <MDBCol md="6">
+        <div class="text-center py-3">
+          <MDBBtn center outline="light" rounded @click="goto"
+            >Check out my testimonials</MDBBtn
+          >
+        </div>
+      </MDBCol>
+    </MDBRow>
   </section>
 </template>
 
 <script>
+import {
+  MDBBtn,
+  MDBCol,
+  MDBRow,
+  MDBCardGroup,
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardImg,
+} from "mdb-vue-ui-kit";
+import story from "@/assets/images/story.jpg";
+import commercial from "@/assets/images/commercial.jpg";
+import product from "@/assets/images/product.jpg";
+
 export default {
-  data() {
-    return {
-      boxes: [
-        {
-          id: 1,
-          name: 'recipe',
-          title: 'Project 1',
-          link: 'https://google.com',
-          source: 'https://google.com',
-          tech: 'VueJS, Firebase, Auth0',
-          desc: 'Project 1 description',
-        },
-        {
-          id: 2,
-          name: 'reciperest',
-          title: 'Project 2',
-          link: 'https://google.com',
-          source: 'https://google.com',
-          tech: 'Django, Postgres, Rest',
-          desc: 'Project 2 description',
-        },
-        {
-          id: 3,
-          name: 'portfolio',
-          title: 'Project 3',
-          link: 'https://google.com',
-          source: 'https://google.com',
-          tech: 'VueJS, Boostrap-vue',
-          desc: 'Project 3 description',
-        },
-      ],
-    }
+  components: {
+    MDBBtn,
+    MDBCol,
+    MDBRow,
+    MDBCardGroup,
+    MDBCard,
+    MDBCardBody,
+    MDBCardTitle,
+    MDBCardText,
+    MDBCardImg,
   },
-}
+  methods: {
+    goto() {
+      const el = document.getElementById("testimonials");
+      el.scrollIntoView({ behavior: "smooth" });
+    },
+  },
+  data: function () {
+    return {
+      story: story,
+      commercial: commercial,
+      product: product,
+    };
+  },
+};
 </script>
 
 <style scoped>
 .font-size-biggish {
   font-size: 1.3rem;
+}
+.hero {
+  background-color: black;
+  padding-bottom: 200px;
+  padding-top: 100px;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
 }
 </style>
