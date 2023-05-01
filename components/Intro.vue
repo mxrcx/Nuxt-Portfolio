@@ -1,5 +1,5 @@
 <template>
-  <header id="intro">
+  <header class="intro-container" id="intro">
     <MDBRow center class="d-flex">
       <MDBCol md="6">
         <div class="text-center py-5">
@@ -37,5 +37,8 @@ export default {
 .name-container {
   font-family: "Arvo";
   font-size: 250%;
+}
+.intro-container {
+  padding: 0px 0 0px;
 }
 </style>

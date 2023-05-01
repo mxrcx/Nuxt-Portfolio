@@ -1,11 +1,13 @@
 <template>
-  <section class="" id="testimonials">
-    <b-row>
-      <b-col class="text-center">
-        <p class="title-text pb-3">Testimonials</p>
-        <p class="regular-text p-2">
-          Here is some feedback of my previous clients:
-        </p>
+  <section class="testimonials-container" id="testimonials">
+    <b-row class="justify-content-center">
+      <b-col lg="6" md="8" sm="10" cols="12">
+        <p class="text-center title-text pb-3">Testimonials</p>
+      </b-col>
+    </b-row>
+    <b-row class="d-flex justify-content-center">
+      <b-col lg="4" md="6" sm="8" cols="10" class="d-flex align-items-center">
+        <p class="font-weight-bold regular-text">Learn more about my recent projects:</p>
       </b-col>
     </b-row>
     <MDBRow :cols="['1', 'md-3']" class="d-flex align-items-center justify-content-center g-4">
@@ -136,9 +138,6 @@ export default {
 
 <style scoped>
 .testimonials-container {
-  background-color: orange;
-  padding: 200px 0 100px;
-  -webkit-clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 100%);
-  clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 100%);
+  padding: 100px 0 100px;
 }
 </style>

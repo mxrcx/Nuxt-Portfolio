@@ -1,8 +1,8 @@
 <template>
-  <section class="hero Portfolio px-5">
+  <section class="hero" id="portfolio">
     <b-row class="justify-content-center">
       <b-col lg="6" md="8" sm="10" cols="12">
-        <p class="text-center title-text text-white pb-3" id="portfolio">
+        <p class="text-center title-text text-white pb-3">
           Portfolio
         </p>
       </b-col>
@@ -123,9 +123,7 @@ export default {
 }
 .hero {
   background-color: black;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   padding-top: 100px;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
 }
 </style>

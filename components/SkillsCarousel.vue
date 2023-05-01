@@ -1,6 +1,6 @@
 <template>
     <section
-      class="w-75 vh-30 m-auto d-flex align-items-center justify-content-center pb-5"
+      class="skills-container w-75 vh-30 m-auto d-flex align-items-center justify-content-center"
     >
       <ClientOnly fallbackTag="div">
         <MDBCarousel v-model="carousel1" :items="items1" fade innerClass="rounded-5 shadow-4-strong" />
@@ -42,3 +42,9 @@
 
   const carousel1 = ref(0);
 </script>
+
+<style scoped>
+.skills-container {
+  padding-bottom: 100px;
+}
+</style>

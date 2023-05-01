@@ -91,8 +91,6 @@ export default {
 }
 .contact-container {
   background-color: orange;
-  padding: 200px 0 100px;
-  -webkit-clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 100%);
-  clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 100%);
+  padding: 100px 0 100px;
 }
 </style>
