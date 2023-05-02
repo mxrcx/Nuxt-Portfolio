@@ -2,15 +2,15 @@
   <section class="testimonials-container" id="testimonials">
     <b-row class="justify-content-center">
       <b-col lg="6" md="8" sm="10" cols="12">
-        <p class="text-center title-text pb-3">Testimonials</p>
+        <p class="text-center title-text text-white pb-2">Testimonials</p>
       </b-col>
     </b-row>
     <b-row class="d-flex justify-content-center">
       <b-col lg="4" md="6" sm="8" cols="10" class="d-flex align-items-center">
-        <p class="font-weight-bold regular-text">Learn more about my recent projects:</p>
+        <p class="font-weight-bold text-white regular-text pb-2">Hear from my recent clients:</p>
       </b-col>
     </b-row>
-    <MDBRow :cols="['1', 'md-3']" class="d-flex align-items-center justify-content-center g-4">
+    <MDBRow :cols="['1', 'md-3']" class="d-flex align-items-center justify-content-center g-4 py-3 px-3">
       <!-- Card 1 -->
       <MDBCol class="d-flex align-items-center justify-content-center">
         <MDBCard style="width: 18rem">
@@ -83,7 +83,7 @@
     <MDBRow center class="d-flex py-5">
       <MDBCol md="6">
         <div class="text-center py-3">
-          <MDBBtn center outline="dark" rounded @click="goto"
+          <MDBBtn center outline="light" rounded @click="goto"
             >Contact me</MDBBtn
           >
         </div>
@@ -139,5 +139,6 @@ export default {
 <style scoped>
 .testimonials-container {
   padding: 100px 0 100px;
+  background-color: black;
 }
 </style>

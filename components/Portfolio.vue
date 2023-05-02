@@ -2,18 +2,18 @@
   <section class="hero" id="portfolio">
     <b-row class="justify-content-center">
       <b-col lg="6" md="8" sm="10" cols="12">
-        <p class="text-center title-text text-white pb-3">
+        <p class="text-center title-text pb-3">
           Portfolio
         </p>
       </b-col>
     </b-row>
     <b-row class="d-flex justify-content-center">
       <b-col lg="4" md="6" sm="8" cols="10" class="d-flex align-items-center">
-        <p class="font-weight-bold text-white regular-text">Learn more about my recent projects:</p>
+        <p class="font-weight-bold regular-text pb-2">Learn more about my recent projects:</p>
       </b-col>
     </b-row>
-    <MDBRow :cols="['1', 'md-2']" class="g-4 py-3">
-      <MDBCol>
+    <MDBRow :cols="['1', 'md-2']" class="d-flex align-items-center justify-content-center g-4 py-3 px-3">
+      <MDBCol class="d-flex align-items-center justify-content-center">
         <MDBCard>
           <MDBCardImg :src="story" top alt="..." />
           <MDBCardBody>
@@ -26,7 +26,7 @@
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
-      <MDBCol>
+      <MDBCol class="d-flex align-items-center justify-content-center">
         <MDBCard>
           <MDBCardImg :src="commercial" top alt="..." />
           <MDBCardBody>
@@ -39,7 +39,7 @@
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
-      <MDBCol>
+      <MDBCol class="d-flex align-items-center justify-content-center">
         <MDBCard>
           <MDBCardImg :src="product" top alt="..." />
           <MDBCardBody>
@@ -49,7 +49,7 @@
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
-      <MDBCol>
+      <MDBCol class="d-flex align-items-center justify-content-center">
         <MDBCard>
           <MDBCardImg :src="product" top alt="..." />
           <MDBCardBody>
@@ -64,7 +64,7 @@
     <MDBRow center class="d-flex py-5">
       <MDBCol md="6">
         <div class="text-center py-3">
-          <MDBBtn center outline="light" rounded @click="goto"
+          <MDBBtn center outline="dark" rounded @click="goto"
             >Check out my testimonials</MDBBtn
           >
         </div>
@@ -122,7 +122,7 @@ export default {
   font-size: 1.3rem;
 }
 .hero {
-  background-color: black;
+  background-color: white;
   padding-bottom: 100px;
   padding-top: 100px;
 }

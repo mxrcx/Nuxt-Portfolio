@@ -39,13 +39,19 @@
     </MDBContainer>
     <!-- Grid container -->
     <!-- Copyright -->
-    <div
-      class="text-center p-3"
-      style="background-color: rgba(0, 0, 0, 0.2)"
-    >
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
       © 2023 Copyright:
       <a class="text-white" href="https://mxrcx.github.io/Nuxt-Portfolio/"
         >Julius Stammler</a
+      >
+    </div>
+    <div class="text-center pb-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      Made by
+      <a
+        class="text-white"
+        style="text-decoration: underline"
+        href="https://www.linkedin.com/in/marco-schaarschmidt/"
+        >Marco Schaarschmidt</a
       >
     </div>
     <!-- Copyright -->
@@ -53,16 +59,23 @@
 </template>
 
 <script>
-  import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdb-vue-ui-kit';
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBBtn,
+  MDBIcon,
+} from "mdb-vue-ui-kit";
 
-  export default {
-    components: {
-      MDBFooter,
-      MDBContainer,
-      MDBRow,
-      MDBCol,
-      MDBBtn,
-      MDBIcon
-    },
-  };
+export default {
+  components: {
+    MDBFooter,
+    MDBContainer,
+    MDBRow,
+    MDBCol,
+    MDBBtn,
+    MDBIcon,
+  },
+};
 </script>

@@ -22,12 +22,7 @@
     class="d-flex justify-content-between"
   >
     <MDBNavbarBrand href="#">
-      <img
-        src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp"
-        height="30"
-        alt=""
-        loading="lazy"
-      />
+      <MDBIcon icon="camera-retro" style="padding-right: 10px;" />
       Julius Stammler Media
     </MDBNavbarBrand>
     <MDBNavbarToggler
@@ -46,7 +41,7 @@
   </MDBNavbar>
 
   <!-- Main body -->
-  <b-container tag="main" fluid class="px-0" style="overflow-x: hidden">
+  <b-container tag="main" fluid class="px-0" style="overflow-x: hidden;">
     <Intro />
     <SkillsCarousel />
     <PhotoDesc />
@@ -71,8 +66,8 @@
   font-family: "Roboto Slab";
 }
 
-.purple {
-  color: purple;
+.dark-red {
+  color: darkred;
 }
 </style>
 
@@ -85,6 +80,7 @@ import {
   MDBNavbarItem,
   MDBCollapse,
   MDBBtn,
+  MDBIcon,
 } from "mdb-vue-ui-kit";
 
 export default {
@@ -97,6 +93,7 @@ export default {
     MDBNavbarItem,
     MDBCollapse,
     MDBBtn,
+    MDBIcon,
   },
   setup() {
     const collapseAction = ref(false);

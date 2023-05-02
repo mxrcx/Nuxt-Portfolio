@@ -46,5 +46,6 @@
 <style scoped>
 .skills-container {
   padding-bottom: 100px;
+  background-color: white;
 }
 </style>

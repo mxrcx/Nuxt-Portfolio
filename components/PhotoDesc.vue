@@ -51,7 +51,7 @@ export default {
 
 <style scoped>
 .description {
-  background-color: orange;
+  background-color: black;
   padding: 100px 0 100px;
 }
 </style>

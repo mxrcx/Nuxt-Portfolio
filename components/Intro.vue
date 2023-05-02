@@ -4,7 +4,7 @@
       <MDBCol md="6">
         <div class="text-center py-5">
           <p class="name-container py-2">
-            Hi, my name is <span class="purple">Julius</span>, content creator.
+            Hi, my name is <span class="dark-red">Julius</span>, content creator.
           </p>
           <MDBBtn center outline="dark" rounded @click="goto"
             >Would you like to know more?</MDBBtn
@@ -40,5 +40,6 @@ export default {
 }
 .intro-container {
   padding: 0px 0 0px;
+  background-color: white;
 }
 </style>
