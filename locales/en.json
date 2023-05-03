@@ -1,0 +1,74 @@
+{
+  "navbar": {
+    "intro": "Intro",
+    "about-me": "About me",
+    "portfolio": "Portfolio",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "intro": {
+    "text": {
+      "my-name-is": "my name is",
+      "content-creator": "content creator"
+    },
+    "button": "Would you like to know more?"
+  },
+  "about-me": {
+    "title": "Who am I?",
+    "text": "My name is Julius Stammler and I'm a content creator based in Jena, Germany. I do professional photo shoots, advertising campaigns and videos at events.",
+    "button": "Check out my projects"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "text": "Learn more about my recent projects:",
+    "cards": {
+      "card1": {
+        "name": "Biathlon Olympics",
+        "text": "I covered the Biathlon Olympics in Oberhof, Thuringia in the year 2022/2023. This was my first big project working alongside a professional TV production team."
+      },
+      "card2": {
+        "name": "Berlin Thunders",
+        "text": "I filmed several American football games for the German football team Berlin Thunders, setting up multiple cameras to capture all the plays from different angles."
+      },
+      "card3": {
+        "name": "FPV Drone",
+        "text": "I produced an unboxing video of the new DJI FPV Drone. This project taught me how to present and promote products."
+      },
+      "card4": {
+        "name": "FPV Drone",
+        "text": "I produced an unboxing video of the new DJI FPV Drone. This project taught me how to present and promote products."
+      }
+    },
+    "button": "Read my testimonials"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "text": "Hear from my recent clients:",
+    "cards": {
+      "card1": {
+        "name": "Julius Stammler",
+        "text": "I'm very happy with the work of Julius and can recommend him!"
+      },
+      "card2": {
+        "name": "Julius Stammler",
+        "text": "I'm very happy with the work of Julius and can recommend him!"
+      },
+      "card3": {
+        "name": "Julius Stammler",
+        "text": "I'm very happy with the work of Julius and can recommend him!"
+      }
+    },
+    "button": "Contact me"
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Write me a message if you want to work with me or have questions!",
+    "form": {
+      "name": "Name",
+      "email": "Email address",
+      "message": "Message",
+      "checkbox": "Send me a copy of this message",
+      "button": "Send"
+    }
+  }
+}

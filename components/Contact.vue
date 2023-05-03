@@ -2,13 +2,13 @@
   <section class="contact-container" id="contact">
     <b-row class="justify-content-center">
       <b-col lg="6" md="8" sm="10" cols="12">
-        <p class="text-center title-text">Contact</p>
+        <p class="text-center title-text">{{ $t("contact.title") }}</p>
       </b-col>
     </b-row>
     <b-row class="d-flex justify-content-center">
       <b-col lg="4" md="6" sm="8" cols="10" class="d-flex align-items-center">
         <p class="font-weight-bold regular-text pb-2">
-          Write me a message if you want to work with me or have questions!
+          {{ $t("contact.text") }}
         </p>
       </b-col>
     </b-row>
@@ -18,7 +18,7 @@
         <div class="contact-fields">
           <MDBInput
             type="text"
-            label="Name"
+            :label="$t('contact.form.name')"
             id="form4Name"
             v-model="form4Name"
             wrapperClass="mb-4"
@@ -29,7 +29,7 @@
         <div class="contact-fields">
           <MDBInput
             type="email"
-            label="Email address"
+            :label="$t('contact.form.email')"
             id="form4Email"
             v-model="form4Email"
             wrapperClass="mb-4"
@@ -39,7 +39,7 @@
         <!-- Message input -->
         <div class="contact-fields">
           <MDBTextarea
-            label="Message"
+            :label="$t('contact.form.message')"
             id="form4Textarea"
             v-model="form4Textarea"
             wrapperClass="mb-4"
@@ -49,16 +49,16 @@
         <!-- Checkbox -->
         <div class="form-check d-flex justify-content-center mb-4">
           <MDBCheckbox
-            label="Send me a copy of this message"
+            :label="$t('contact.form.checkbox')"
             id="form4CopyCheck"
             v-model="form4CopyCheck"
           />
         </div>
 
         <!-- Submit button -->
-        <MDBBtn color="primary" block class="mb-4" disabled
-          >Send</MDBBtn
-        >
+        <MDBBtn color="primary" block class="mb-4" disabled>{{
+          $t("contact.form.button")
+        }}</MDBBtn>
       </form>
     </b-row>
   </section>

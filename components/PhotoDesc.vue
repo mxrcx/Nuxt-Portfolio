@@ -1,6 +1,8 @@
 <template>
   <section class="description" id="about">
-    <p class="text-center title-text text-white">Who am I?</p>
+    <p class="text-center title-text text-white">
+      {{ $t("about-me.title") }}
+    </p>
     <MDBRow class="d-flex justify-content-center">
       <MDBCol
         lg="3"
@@ -13,9 +15,7 @@
       </MDBCol>
       <MDBCol lg="4" md="6" sm="8" cols="10" class="d-flex align-items-center">
         <p class="font-weight-bold text-white regular-text p-5">
-          My name is Julius Stammler and I'm a content creator based in Jena,
-          Germany. I do professional photo shoots, advertising campaigns and
-          video at events.
+          {{ $t("about-me.text") }}
         </p>
       </MDBCol>
     </MDBRow>
@@ -23,7 +23,7 @@
       <MDBCol md="6">
         <div class="text-center py-2">
           <MDBBtn center outline="light" rounded @click="goto"
-            >Check out my projects</MDBBtn
+            >{{ $t("about-me.button") }}</MDBBtn
           >
         </div>
       </MDBCol>

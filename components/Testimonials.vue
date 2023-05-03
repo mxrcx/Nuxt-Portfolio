@@ -2,15 +2,22 @@
   <section class="testimonials-container" id="testimonials">
     <b-row class="justify-content-center">
       <b-col lg="6" md="8" sm="10" cols="12">
-        <p class="text-center title-text text-white pb-2">Testimonials</p>
+        <p class="text-center title-text text-white pb-2">
+          {{ $t("testimonials.title") }}
+        </p>
       </b-col>
     </b-row>
     <b-row class="d-flex justify-content-center">
       <b-col lg="4" md="6" sm="8" cols="10" class="d-flex align-items-center">
-        <p class="font-weight-bold text-white regular-text pb-2">Hear from my recent clients:</p>
+        <p class="font-weight-bold text-white regular-text pb-2">
+          {{ $t("testimonials.text") }}
+        </p>
       </b-col>
     </b-row>
-    <MDBRow :cols="['1', 'md-3']" class="d-flex align-items-center justify-content-center g-4 py-3 px-3">
+    <MDBRow
+      :cols="['1', 'md-3']"
+      class="d-flex align-items-center justify-content-center g-4 py-3 px-3"
+    >
       <!-- Card 1 -->
       <MDBCol class="d-flex align-items-center justify-content-center">
         <MDBCard style="width: 18rem">
@@ -23,12 +30,13 @@
               alt="..."
             />
             <MDBCardBody>
-              <MDBCardTitle>Julius Stammler</MDBCardTitle>
+              <MDBCardTitle>{{
+                $t("testimonials.cards.card1.name")
+              }}</MDBCardTitle>
               <hr class="hr hr-blurry" />
-              <MDBCardText>
-                "Ich bin super zufrieden mit der Arbeit von Julius an meinem
-                Projekt!"
-              </MDBCardText>
+              <MDBCardText>{{
+                $t("testimonials.cards.card1.text")
+              }}</MDBCardText>
             </MDBCardBody>
           </div>
         </MDBCard>
@@ -46,12 +54,13 @@
               alt="..."
             />
             <MDBCardBody>
-              <MDBCardTitle>Julius Stammler</MDBCardTitle>
+              <MDBCardTitle>{{
+                $t("testimonials.cards.card2.name")
+              }}</MDBCardTitle>
               <hr class="hr hr-blurry" />
-              <MDBCardText>
-                "Ich bin super zufrieden mit der Arbeit von Julius an meinem
-                Projekt!"
-              </MDBCardText>
+              <MDBCardText>{{
+                $t("testimonials.cards.card2.text")
+              }}</MDBCardText>
             </MDBCardBody>
           </div>
         </MDBCard>
@@ -69,11 +78,12 @@
               alt="..."
             />
             <MDBCardBody>
-              <MDBCardTitle>Julius Stammler</MDBCardTitle>
+              <MDBCardTitle>{{
+                $t("testimonials.cards.card3.name")
+              }}</MDBCardTitle>
               <hr class="hr hr-blurry" />
-              <MDBCardText>
-                "Ich bin super zufrieden mit der Arbeit von Julius an meinem
-                Projekt!"
+              <MDBCardText
+                >{{ $t("testimonials.cards.card3.text") }}
               </MDBCardText>
             </MDBCardBody>
           </div>
@@ -83,9 +93,9 @@
     <MDBRow center class="d-flex py-5">
       <MDBCol md="6">
         <div class="text-center py-3">
-          <MDBBtn center outline="light" rounded @click="goto"
-            >Contact me</MDBBtn
-          >
+          <MDBBtn center outline="light" rounded @click="goto">{{
+            $t("testimonials.button")
+          }}</MDBBtn>
         </div>
       </MDBCol>
     </MDBRow>

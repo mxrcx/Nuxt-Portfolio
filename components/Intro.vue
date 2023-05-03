@@ -4,10 +4,10 @@
       <MDBCol md="6">
         <div class="text-center py-5">
           <p class="name-container py-2">
-            Hi, my name is <span class="dark-red">Julius</span>, content creator.
+            Hi, {{ $t('intro.text.my-name-is') }} <span class="dark-red">Julius</span>, {{ $t('intro.text.content-creator') }}.
           </p>
           <MDBBtn center outline="dark" rounded @click="goto"
-            >Would you like to know more?</MDBBtn
+            >{{ $t('intro.button') }}</MDBBtn
           >
         </div>
       </MDBCol>

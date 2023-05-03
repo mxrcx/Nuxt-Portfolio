@@ -1,0 +1,74 @@
+{
+  "navbar": {
+    "intro": "Intro",
+    "about-me": "Über mich",
+    "portfolio": "Portfolio",
+    "testimonials": "Referenzen",
+    "contact": "Kontakt"
+  },
+  "intro": {
+    "text": {
+      "my-name-is": "ich bin",
+      "content-creator": "Content Creator"
+    },
+    "button": "Möchtest du mehr erfahren?"
+  },
+  "about-me": {
+    "title": "Wer bin ich?",
+    "text": "Ich heiße Julius Stammler und ich bin ein Content Creator aus Jena. I mache professionelle Fotoshootings, Werbekampagnen und Videobegleitung von Events.",
+    "button": "Schau dir meine Projekte an"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "text": "Erfahre mehr über meine letzten Projekte:",
+    "cards": {
+      "card1": {
+        "name": "Olympische Spiele im Biathlon",
+        "text": "Ich habe über die Biathlon-Olympiade in Oberhof, Thüringen, im Jahr 2022/2023 berichtet. Dies war mein erstes großes Projekt, bei dem ich mit einem professionellen TV-Produktionsteam zusammenarbeitete."
+      },
+      "card2": {
+        "name": "Berlin Thunders",
+        "text": "Ich habe mehrere American-Football-Spiele für das deutsche Football-Team Berlin Thunders gefilmt und dabei mehrere Kameras aufgestellt, um alle Spiele aus verschiedenen Blickwinkeln einzufangen."
+      },
+      "card3": {
+        "name": "FPV Drohne",
+        "text": "Ich habe ein Unboxing-Video der neuen DJI FPV-Drohne produziert. Bei diesem Projekt habe ich gelernt, wie man Produkte präsentiert und bewirbt"
+      },
+      "card4": {
+        "name": "FPV Drohne",
+        "text": "Ich habe ein Unboxing-Video der neuen DJI FPV-Drohne produziert. Bei diesem Projekt habe ich gelernt, wie man Produkte präsentiert und bewirbt."
+      }
+    },
+    "button": "Lies meine Referenzen"
+  },
+  "testimonials": {
+    "title": "Referenzen",
+    "text": "Lies was meine Klienten über mich sagen:",
+    "cards": {
+      "card1": {
+        "name": "Julius Stammler",
+        "text": "Ich bin super zufrieden mit der Arbeit von Julius an meinem Projekt!"
+      },
+      "card2": {
+        "name": "Julius Stammler",
+        "text": "Ich bin super zufrieden mit der Arbeit von Julius an meinem Projekt!"
+      },
+      "card3": {
+        "name": "Julius Stammler",
+        "text": "Ich bin super zufrieden mit der Arbeit von Julius an meinem Projekt!"
+      }
+    },
+    "button": "Kontaktiere mich"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "Schreibe mir eine Nachricht, wenn du mit mir zusammenarbeiten willst oder Fragen hast!",
+    "form": {
+      "name": "Name",
+      "email": "Email-Adresse",
+      "message": "Nachricht",
+      "checkbox": "Sende mir eine Kopie dieser Nachricht",
+      "button": "Senden"
+    }
+  }
+}

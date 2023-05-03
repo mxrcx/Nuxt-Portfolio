@@ -16,6 +16,14 @@ export default defineNuxtConfig({
     },
     baseURL: "/Nuxt-Portfolio/",
   },
+  modules: [
+    [
+      '@nuxtjs/i18n',
+      { 
+        vueI18n: './i18n.config.ts'
+      }
+    ]
+  ],
   css: ["~/assets/scss/index.scss"],
   build: {
     transpile: ["mdb-vue-ui-kit"],
