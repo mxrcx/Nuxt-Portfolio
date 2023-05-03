@@ -1,5 +1,5 @@
 <template>
-  <section class="hero" id="portfolio">
+  <section class="container" id="portfolio">
     <b-row class="justify-content-center">
       <b-col lg="6" md="8" sm="10" cols="12">
         <p class="text-center title-text pb-3">{{ $t("portfolio.title") }}</p>
@@ -113,7 +113,7 @@ export default {
 .font-size-biggish {
   font-size: 1.3rem;
 }
-.hero {
+.container {
   background-color: white;
   padding-bottom: 100px;
   padding-top: 100px;
