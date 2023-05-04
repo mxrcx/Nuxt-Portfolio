@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     [
       '@nuxtjs/i18n',
       { 
-        vueI18n: './i18n.config.ts'
+        vueI18n: './i18n.config.ts',
       }
     ]
   ],
@@ -28,4 +28,5 @@ export default defineNuxtConfig({
   build: {
     transpile: ["mdb-vue-ui-kit"],
   },
+  ssr: false,
 });
